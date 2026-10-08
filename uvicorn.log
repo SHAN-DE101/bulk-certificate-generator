@@ -1,7 +1,0 @@
-INFO:     Started server process [22322]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:59459 - "POST /api/certificates/generate HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:59460 - "GET /api/certificates/jobs/791afc65-c1b3-4f05-a127-af61b264bf60 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59461 - "GET /api/certificates/58aab340-1ecf-4c64-aa93-f8f3a143b575/download HTTP/1.1" 200 OK

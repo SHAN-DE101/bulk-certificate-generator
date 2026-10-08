@@ -1,8 +1,21 @@
+# macOS metadata
+.DS_Store
+*/.DS_Store
+
+# Python & Virtualenv
 __pycache__/
 *.py[cod]
 *$py.class
 .venv/
+
+# Database & Runtime Logs
 certificates.db
+*.log
+uvicorn.log
+
+# Generated certificates
 certificates/*.png
 !certificates/.gitkeep
+
+# Pytest cache
 .pytest_cache/
