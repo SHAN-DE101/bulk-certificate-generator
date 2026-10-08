@@ -1,6 +1,6 @@
 import enum
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy import Column, DateTime, Enum, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import relationship
 from .database import Base
@@ -29,7 +29,7 @@ class CertificateJob(Base):
     success_count = Column(Integer, default=0)
     failed_count = Column(Integer, default=0)
     status = Column(Enum(JobStatus), default=JobStatus.PENDING)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     recipients = relationship("CertificateItem", back_populates="job", cascade="all, delete-orphan")
 
