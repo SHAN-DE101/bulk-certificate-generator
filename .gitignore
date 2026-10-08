@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+certificates.db
+certificates/*.png
+!certificates/.gitkeep
+.pytest_cache/
